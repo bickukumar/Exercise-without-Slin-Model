@@ -1,0 +1,9 @@
+<h2>------------------------------Navigation Links as follows------------------------------</h2>
+<div class="container">
+    <ul data-sly-list.myItems="${resource.children}">
+        <ul data-sly-list.myLinks="${myItems.children}">
+            <li><a href="${myLinks.url}">${myLinks.title}</a></li>
+        </ul>
+    </ul>
+</div>
+
